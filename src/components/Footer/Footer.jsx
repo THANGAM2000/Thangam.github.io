@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="flex justify-center space-x-5 text-lg">
           {[
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/thangam-m-aa0532198/" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
+            { icon: <FaInstagram />, link: "" },
           ].map((item, index) => (
             <a
               key={index}
