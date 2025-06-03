@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  FaLinkedin,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   const handleScroll = (sectionId) => {
@@ -6,7 +10,7 @@ const Footer = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  }:
+  };
 
   return (
     <footer className="bg-black text-white py-10 px-6 md:px-[10vw]">
@@ -37,6 +41,26 @@ const Footer = () => {
             </button>
           ))}
         </nav>
+
+
+
+        {/* Social Icons */}
+        <div className="flex justify-center space-x-5 text-lg">
+          {[
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/thangam-m-aa0532198/" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
+          ].map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-purple-400 transition-transform transform hover:scale-110"
+            >
+              {item.icon}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Bottom Text */}
