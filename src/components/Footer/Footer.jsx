@@ -6,7 +6,7 @@ const Footer = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }:
 
   return (
     <footer className="bg-black text-white py-10 px-6 md:px-[10vw]">
